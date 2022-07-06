@@ -11,6 +11,9 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="9992ac1d-9deb-4fc9-8130-047b2172c4ec" >
 		<http:listener-connection host="0.0.0.0" port="8081" />
 	</http:listener-config>
+	<http:request-config name="HTTP_Request_configuration" doc:name="HTTP Request configuration" doc:id="14e794aa-6a7e-498e-84b7-5159a22e3a38" >
+		<http:request-connection host="github" port="80" />
+	</http:request-config>
 
 
     <!-- configure here resource to be shared within the domain -->
